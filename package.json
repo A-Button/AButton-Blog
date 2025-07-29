@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "deploy": "f=$(mktemp); trap 'rm -f $f' EXIT; curl -fsSL https://host.retiehe.com/cli -o $f && node $f --site blog.abutton.top --outdir ."
+  }
+}
